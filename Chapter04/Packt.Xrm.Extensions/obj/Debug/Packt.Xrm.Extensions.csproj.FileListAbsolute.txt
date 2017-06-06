@@ -1,0 +1,40 @@
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Packt.Xrm.Extensions.dll.config
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Packt.Xrm.Extensions.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Packt.Xrm.Extensions.pdb
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.IdentityModel.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Sdk.Deployment.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Tooling.Connector.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Sdk.Deployment.xml
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Tooling.Connector.xml
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\obj\Debug\Packt.Xrm.Extensions.csprojResolveAssemblyReference.cache
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\obj\Debug\Packt.Xrm.Extensions.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Extensions\obj\Debug\Packt.Xrm.Extensions.pdb
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Packt.Xrm.Extensions.dll.config
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Packt.Xrm.Extensions.dll
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Packt.Xrm.Extensions.pdb
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.IdentityModel.dll
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Sdk.Deployment.dll
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Tooling.Connector.dll
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Sdk.Deployment.xml
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\bin\Debug\Microsoft.Xrm.Tooling.Connector.xml
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\obj\Debug\Packt.Xrm.Extensions.csprojResolveAssemblyReference.cache
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\obj\Debug\Packt.Xrm.Extensions.dll
+C:\Users\Rami\OneDrive\PackT\4. Server Side Extensions\Code\Packt.Xrm.Extensions\obj\Debug\Packt.Xrm.Extensions.pdb
