@@ -1,0 +1,19 @@
+<html>
+<head>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/packt.app.js"></script>
+    <script type="text/javascript" src="js/packt.controller.js"></script> 
+    <script type="text/javascript" src="js/packt.service.js"></script>
+    <meta charset="utf-8">
+        <title>Attributes V1.14</title>
+    </meta>
+</head>
+<body> 
+    <div ng-app="packtApp" ng-controller="packtController">
+        <div ng-if="dataLoading">Loading analysis...</div>
+        <ul ng-repeat="attribute in attributes" ng-if="dataLoading === false">
+            <li>{{ attribute.LogicalName }}</li>
+        </ul>
+    </div>
+</body>
+</html>
