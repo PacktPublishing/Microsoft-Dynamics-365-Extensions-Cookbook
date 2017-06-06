@@ -1,0 +1,15 @@
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\bin\Debug\Packt.Xrm.CrmSvcUtilExensions.dll
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\bin\Debug\Packt.Xrm.CrmSvcUtilExensions.pdb
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\bin\Debug\CrmSvcUtil.exe
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\bin\Debug\Microsoft.IdentityModel.dll
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\bin\Debug\Microsoft.Xrm.Tooling.Connector.dll
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\bin\Debug\Microsoft.Xrm.Tooling.CrmConnectControl.dll
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\bin\Debug\Microsoft.Xrm.Sdk.Deployment.dll
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\obj\Debug\Packt.Xrm.CrmSvcUtilExensions.dll
+C:\Projects\CrmSvcUtilExtension\CrmSvcUtilExtension\obj\Debug\Packt.Xrm.CrmSvcUtilExensions.pdb
