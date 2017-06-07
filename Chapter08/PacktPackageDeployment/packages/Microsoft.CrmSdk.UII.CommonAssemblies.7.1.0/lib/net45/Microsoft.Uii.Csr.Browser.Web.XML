@@ -1,0 +1,2208 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Uii.Csr.Browser.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.DShellWindowsEvents">
+            <summary>
+            Receives IShellWindows window registration events. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DShellWindowsEvents.WindowRegistered(System.Int32)">
+            <summary>
+            Called when a window is registered as a Shell window. 
+            </summary>
+            <param name="lCookie"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DShellWindowsEvents.WindowRevoked(System.Int32)">
+            <summary>
+            Called when a Shell window's registration is revoked.
+            </summary>
+            <param name="lCookie"></param>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents">
+            <summary>
+            Designates an event sink interface that an application must implement to receive event notifications from a WebBrowser control or from the Windows Internet Explorer application. Note that not all of the following events are supported by the WebBrowser control.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents.BeforeNavigate(System.String,System.Int32,System.String,System.Object@,System.String,System.Boolean@)">
+            <summary>
+            Fires before navigation occurs in the given object (on either a window element or a frameset element).
+            </summary>
+            <param name="URL"></param>
+            <param name="Flags"></param>
+            <param name="TargetFrameName"></param>
+            <param name="PostData"></param>
+            <param name="Headers"></param>
+            <param name="Cancel"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents.NavigateComplete(System.String)">
+            <summary>
+            Fires after a navigation to a link is completed on a window element or a frameSet element.
+            </summary>
+            <param name="URL"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents.NewWindow(System.String,System.Int32,System.String,System.Object@,System.String,System.Boolean@)">
+            <summary>
+            Fires when a new window is to be created.
+            </summary>
+            <param name="URL"></param>
+            <param name="Flags"></param>
+            <param name="TargetFrameName"></param>
+            <param name="PostData"></param>
+            <param name="Headers"></param>
+            <param name="Processed"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents.FrameBeforeNavigate(System.String,System.Int32,System.String,System.Object@,System.String,System.Boolean@)">
+            <summary>
+            Fires before navigation occurs in the given object (on either a window element or a frameset element).
+            </summary>
+            <param name="URL"></param>
+            <param name="Flags"></param>
+            <param name="TargetFrameName"></param>
+            <param name="PostData"></param>
+            <param name="Headers"></param>
+            <param name="Cancel"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents.FrameNavigateComplete(System.String)">
+            <summary>
+            Fires after a navigation to a link is completed on a window element or a frameSet element.
+            </summary>
+            <param name="URL"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents.FrameNewWindow(System.String,System.Int32,System.String,System.Object@,System.String,System.Boolean@)">
+            <summary>
+            fires when a new window frame is to be created.
+            </summary>
+            <param name="URL"></param>
+            <param name="Flags"></param>
+            <param name="TargetFrameName"></param>
+            <param name="PostData"></param>
+            <param name="Headers"></param>
+            <param name="Processed"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents.Quit(System.Boolean@)">
+            <summary>
+            Fires before the Internet Explorer application quits.
+            </summary>
+            <param name="Cancel"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents.WindowMove">
+            <summary>
+            Fires when window is moved.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents.WindowResize">
+            <summary>
+            Fires when window is resized.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents.WindowActivate">
+            <summary>
+            Not implemented.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2">
+            <summary>
+            Designates an event sink interface that an application must implement to receive event notifications from a WebBrowser control or from the Windows Internet Explorer application. Note that not all of the following events are supported by the WebBrowser control.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.StatusTextChange(System.String)">
+            <summary>
+            Fires when the status bar text of the object has changed.
+            </summary>
+            <param name="Text"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.ProgressChange(System.Int32,System.Int32)">
+            <summary>
+            Fires when the progress of a download operation is updated on the object.
+            </summary>
+            <param name="Progress"></param>
+            <param name="ProgressMax"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.CommandStateChange(System.Int32,System.Boolean)">
+            <summary>
+            Fires when the enabled state of a command changes.
+            </summary>
+            <param name="Command"></param>
+            <param name="Enable"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.DownloadBegin">
+            <summary>
+            Fires when a navigation operation begins.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.DownloadComplete">
+            <summary>
+            Fires when a navigation operation begins.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.TitleChange(System.String)">
+            <summary>
+            Fires when the title of a document in the object becomes available or changes.
+            </summary>
+            <param name="Text"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.PropertyChange(System.String)">
+            <summary>
+            Fires when the IWebBrowser2::PutProperty method of the object changes the value of a property.
+            </summary>
+            <param name="szProperty"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.BeforeNavigate2(System.Object,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Boolean@)">
+            <summary>
+            Fires before navigation occurs in the given object (on either a window element or a frameset element).
+            </summary>
+            <param name="pDisp"></param>
+            <param name="URL"></param>
+            <param name="Flags"></param>
+            <param name="TargetFrameName"></param>
+            <param name="PostData"></param>
+            <param name="Headers"></param>
+            <param name="Cancel"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.NewWindow2(System.Object@,System.Boolean@)">
+            <summary>
+            Fires when a new window is to be created.
+            </summary>
+            <param name="ppDisp"></param>
+            <param name="Cancel"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.NavigateComplete2(System.Object,System.Object@)">
+            <summary>
+            Fires after a navigation to a link is completed on a window element or a frameSet element.
+            </summary>
+            <param name="pDisp"></param>
+            <param name="URL"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.DocumentComplete(System.Object,System.Object@)">
+            <summary>
+            Fires when a document is completely loaded and initialized
+            </summary>
+            <param name="pDisp"></param>
+            <param name="URL"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.OnQuit">
+            <summary>
+            Fires before the Internet Explorer application quits.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.OnVisible(System.Boolean)">
+            <summary>
+            Fires when the IWebBrowser2::Visible property of the object is changed
+            </summary>
+            <param name="Visible"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.OnToolBar(System.Boolean)">
+            <summary>
+            Fires when the IWebBrowser2::ToolBar property is changed.
+            </summary>
+            <param name="ToolBar"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.OnMenuBar(System.Boolean)">
+            <summary>
+            Fires when the IWebBrowser2::MenuBar property is changed.
+            </summary>
+            <param name="MenuBar"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.OnStatusBar(System.Boolean)">
+            <summary>
+            Fires when the IWebBrowser2::StatusBar property is changed.
+            </summary>
+            <param name="StatusBar"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.OnFullScreen(System.Boolean)">
+            <summary>
+            Fires when the IWebBrowser2::FullScreen property is changed.
+            </summary>
+            <param name="FullScreen"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.OnTheaterMode(System.Boolean)">
+            <summary>
+            Fires when the IWebBrowser2::TheaterMode property is changed.
+            </summary>
+            <param name="TheaterMode"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.WindowSetResizable(System.Boolean)">
+            <summary>
+            Fires to indicate whether the host window should allow resizing of the object
+            
+            </summary>
+            <param name="Resizable"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.WindowSetLeft(System.Int32)">
+            <summary>
+            Fires when the object changes its left position.
+            </summary>
+            <param name="Left"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.WindowSetTop(System.Int32)">
+            <summary>
+            Fires when the object changes its top position.
+            </summary>
+            <param name="Top"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.WindowSetWidth(System.Int32)">
+            <summary>
+            Fires when the object changes its width.
+            </summary>
+            <param name="Width"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.WindowSetHeight(System.Int32)">
+            <summary>
+            Fires when the object changes its height.
+            </summary>
+            <param name="Height"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.WindowClosing(System.Boolean,System.Boolean@)">
+            <summary>
+            Fires when the window of the object is about to be closed by script.
+            </summary>
+            <param name="IsChildWindow"></param>
+            <param name="Cancel"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.ClientToHostWindow(System.Int32@,System.Int32@)">
+            <summary>
+            Fires to request that the client window size is converted to the host window size.
+            </summary>
+            <param name="CX"></param>
+            <param name="CY"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.SetSecureLockIcon(System.Int32)">
+            <summary>
+            Fires when there is a change in encryption level
+            </summary>
+            <param name="SecureLockIcon"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.FileDownload(System.Boolean,System.Boolean@)">
+            <summary>
+            Fires to indicate that a file download is about to occur. If a file download dialog box can be displayed, this event fires prior to the appearance of the dialog box.
+            </summary>
+            <param name="ActiveDocument"></param>
+            <param name="Cancel"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.NavigateError(System.Object,System.Object@,System.Object@,System.Object@,System.Boolean@)">
+            <summary>
+            Fires when an error occurs during navigation.
+            </summary>
+            <param name="pDisp"></param>
+            <param name="URL"></param>
+            <param name="Frame"></param>
+            <param name="StatusCode"></param>
+            <param name="Cancel"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.PrintTemplateInstantiation(System.Object)">
+            <summary>
+            Fires when a print template is instantiated.
+            </summary>
+            <param name="pDisp"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.PrintTemplateTeardown(System.Object)">
+            <summary>
+            Fires when a print template is destroyed.
+            </summary>
+            <param name="pDisp"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.UpdatePageStatus(System.Object,System.Object@,System.Object@)">
+            <summary>
+            Not implemented
+            </summary>
+            <param name="pDisp"></param>
+            <param name="nPage"></param>
+            <param name="fDone"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.PrivacyImpactedStateChange(System.Boolean)">
+            <summary>
+            Fired when an event occurs that impacts privacy, or when a user navigates away from a URL that has impacted privacy.
+            </summary>
+            <param name="bImpacted"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.NewWindow3(System.Object@,System.Boolean@,System.UInt32,System.String,System.String)">
+            <summary>
+            Raised when a new window is to be created. Extends DWebBrowserEvents2::NewWindow2 with additional information about the new window
+            </summary>
+            <param name="ppDisp"></param>
+            <param name="Cancel"></param>
+            <param name="dwFlags"></param>
+            <param name="bstrUrlContext"></param>
+            <param name="bstrUrl"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.SetPhishingFilterStatus(System.Int32)">
+            <summary>
+            Fires to indicate the progress and status of Microsoft Phishing Filter analysis of the current webpage.
+            </summary>
+            <param name="PhishingFilterStatus"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.WindowStateChanged(System.UInt32,System.UInt32)">
+            <summary>
+            Fires when the visibility state of a content window, such as the browser window or a tab, changes.
+            </summary>
+            <param name="dwWindowStateFlags"></param>
+            <param name="dwValidFlagsMask"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.DWebBrowserEvents2.NewProcess(System.Int32,System.Object,System.Boolean)">
+            <summary>
+            Fires when a new process is created.
+            </summary>
+            <param name="CauseFlags"></param>
+            <param name="pWB2"></param>
+            <param name="Cancel"></param>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.BeforeNavigateEventArgs">
+            <summary>
+            Event Arguments for the BeforeNavigateEvent
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BeforeNavigateEventArgs.URL">
+            <summary>
+            String expression that evaluates to the URL to which the browser is navigating. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BeforeNavigateEventArgs.Flags">
+            <summary>
+            Reserved. Set to zero. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BeforeNavigateEventArgs.TargetFrameName">
+            <summary>
+            String expression that evaluates to the name of the frame in which the resource will be displayed, or Null if no named frame is targeted for the resource
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BeforeNavigateEventArgs.PostData">
+            <summary>
+            Data to send to the server if the HTTP POST transaction is being used
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BeforeNavigateEventArgs.Headers">
+            <summary>
+            Value that specifies the additional HTTP headers to send to the server (HTTP URLs only). The headers can specify such things as the action required of the server, the type of data being passed to the server, or a status code. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BeforeNavigateEventArgs.Cancel">
+            <summary>
+            Boolean value that the container can set to True to cancel the navigation operation, or to False to allow it to proceed. 
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.ClientToHostWindowEventArgs">
+            <summary>
+            Event Arguments for the BeforeNavigateEvent
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.ClientToHostWindowEventArgs.CX">
+            <summary>
+            Integer expression that evaluates to the CX
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.ClientToHostWindowEventArgs.CY">
+            <summary>
+            Integer expression that evaluates to the CY
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.CommandStateChangeEventArgs">
+            <summary>
+            Event Arguments for the CommandStateChangeEventArgs
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.CommandStateChangeEventArgs.Command">
+            <summary>
+            Integer expression that evaluates to the Command
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.CommandStateChangeEventArgs.Enable">
+            <summary>
+            Integer expression that evaluates to the Enable
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.DocumentCompleteEventArgs">
+            <summary>
+            Event Arguments for the DocumentCompleteEventArgs on completed of event
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.DocumentCompleteEventArgs.pDisp">
+            <summary>
+            object expression that evaluates to the pDisp
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.DocumentCompleteEventArgs.URL">
+            <summary>
+            object expression that evaluates to the URL
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.NavigateCompleteEventArgs">
+            <summary>
+            Fires after a navigation to a link is completed on either a window element or a frameSet element.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NavigateCompleteEventArgs.URL">
+            <summary>
+            String expression that evaluates to the URL, UNC file name, or PIDL that was navigated to. 
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.NewWindowEventArgs">
+            <summary>
+            Event arguments for New Window Event
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewWindowEventArgs.URL">
+            <summary>
+            object expression that evaluates to the URL
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewWindowEventArgs.Flags">
+            <summary>
+            object expression that evaluates to the Flags
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewWindowEventArgs.TargetFrameName">
+            <summary>
+            object expression that evaluates to the TargetFrameName
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewWindowEventArgs.PostData">
+            <summary>
+            object expression that evaluates to the PostData
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewWindowEventArgs.Headers">
+            <summary>
+            object expression that evaluates to the Headers
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewWindowEventArgs.Processed">
+            <summary>
+            object expression that evaluates to the Processed
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.BeforeNavigate2EventArgs">
+            <summary>
+            Event Arguments for the BeforeNavigate2 WebBrowserExtended event
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BeforeNavigate2EventArgs.pDisp">
+            <summary>
+            object expression that evaluates to the pDisp
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BeforeNavigate2EventArgs.URL">
+            <summary>
+            object expression that evaluates to the URL
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BeforeNavigate2EventArgs.Flags">
+            <summary>
+            object expression that evaluates to the Flags
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BeforeNavigate2EventArgs.TargetFrameName">
+            <summary>
+            object expression that evaluates to the TargetFrameName
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BeforeNavigate2EventArgs.PostData">
+            <summary>
+            object expression that evaluates to the PostData
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BeforeNavigate2EventArgs.Headers">
+            <summary>
+            object expression that evaluates to the Headers
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BeforeNavigate2EventArgs.Cancel">
+            <summary>
+            bool expression that evaluates to the Cancel
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.FileDownloadEventArgs">
+            <summary>
+            Event arguments for a FileDownloadEventArgs event
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.FileDownloadEventArgs.ActiveDocument">
+            <summary>
+            bool expression that evaluates to the ActiveDocument
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.FileDownloadEventArgs.Cancel">
+            <summary>
+            bool expression that evaluates to the Cancel
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.NavigateComplete2EventArgs">
+            <summary>
+            Event arguments for a NavigateComplete2 event
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NavigateComplete2EventArgs.pDisp">
+            <summary>
+            Object that evaluates to the top-level or frame WebBrowser object corresponding to the event. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NavigateComplete2EventArgs.URL">
+            <summary>
+            String expression that evaluates to the URL, UNC file name, or PIDL that was navigated to. Note that this URL can be different from the URL that the browser was told to navigate to. One reason is that this URL is the canonicalized and qualified URL; for example, if an application specified a URL of "www.microsoft.com" in a call to the Navigate or Navigate2 method, the URL passed by Navigate2 will be "http://www.microsoft.com/". Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.NewProcessEventArgs">
+            <summary>
+            Event arguments for a NewProcess event
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewProcessEventArgs.pWB2">
+            <summary>
+            Object that evaluates to the top-level or frame WebBrowser object corresponding to the event. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewProcessEventArgs.CauseFlag">
+            <summary>
+            String expression that evaluates to the URL, UNC file name, or PIDL that was navigated to. Note that this URL can be different from the URL that the browser was told to navigate to. One reason is that this URL is the canonicalized and qualified URL; for example, if an application specified a URL of "www.microsoft.com" in a call to the Navigate or Navigate2 method, the URL passed by Navigate2 will be "http://www.microsoft.com/". Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewProcessEventArgs.Cancel">
+            <summary>
+            Boolean that specifies whether to cancel the navigation to an error page and/or any further autosearch.
+            False
+                 Default. Continue with navigation to an error page or autosearch.
+            True
+                 Cancel navigation to an error page or autosearch.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.NavigateErrorEventArgs">
+            <summary>
+            Event arguments for a navigate error event
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NavigateErrorEventArgs.pDisp">
+            <summary>
+            Object that evaluates to the top-level or frame WebBrowser object corresponding to the failed navigation. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NavigateErrorEventArgs.URL">
+            <summary>
+            String expression that evaluates to the URL for which navigation failed. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NavigateErrorEventArgs.Frame">
+            <summary>
+            String that evaluates to the name of the frame in which the resource is to be displayed, or Null if no named frame is targeted for the resource. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NavigateErrorEventArgs.StatusCode">
+            <summary>
+            Integer that contains a status code corresponding to the error, if available. For a list of the possible status codes, see NavigateError Event Status Codes.  
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NavigateErrorEventArgs.Cancel">
+            <summary>
+            Boolean that specifies whether to cancel the navigation to an error page and/or any further autosearch.
+            False
+                 Default. Continue with navigation to an error page or autosearch.
+            True
+                 Cancel navigation to an error page or autosearch.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.NewWindow2EventArgs">
+            <summary>
+            Event arguments for a NewWindow2EventArgs event
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewWindow2EventArgs.ppDisp">
+            <summary>
+            property to get and set the value for ppDisp
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewWindow2EventArgs.Cancel">
+            <summary>
+            A Boolean value that determines whether the current navigation should be canceled
+            False
+                 Default. Continue with navigation.
+            True
+                 Cancel navigation 
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.NewWindow3EventArgs">
+            <summary>
+            Arguments for a NewWindow3 Event
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewWindow3EventArgs.ppDisp">
+            <summary>
+            Object expression that, optionally, receives a new, hidden WebBrowser or InternetExplorer object with no URL loaded. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewWindow3EventArgs.Cancel">
+            <summary>
+            A Boolean value that determines whether the current navigation should be canceled
+            False
+                 Default. Continue with navigation.
+            True
+                 Cancel navigation 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewWindow3EventArgs.dwFlags">
+            <summary>
+            The flags from the NWMF enumeration that pertain to the new window. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewWindow3EventArgs.bstrUrlContext">
+            <summary>
+            The URL of the page that is opening the new window. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.NewWindow3EventArgs.bstrUrl">
+            <summary>
+            The URL that is opened in the new window. 
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.OnVisibleEventArgs">
+            <summary>
+            Event Arguments for the OnVisibleEventArgs returns visible as true or false
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.OnVisibleEventArgs.Visible">
+            <summary>
+            property to get the value for visible
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.OnToolBarEventArgs">
+            <summary>
+            Event Arguments for the OnToolBarEventArgs returns ToolBar
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.OnToolBarEventArgs.ToolBar">
+            <summary>
+            property to get ToolBar as of type bool
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.OnMenuBarEventArgs">
+            <summary>
+            Event Arguments for the OnMenuBarEventArgs returns MenuBar
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.OnMenuBarEventArgs.MenuBar">
+            <summary>
+            property to get the boolean value that tells the menubar 
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.OnStatusBarEventArgs">
+            <summary>
+            Event Arguments for the OnStatusBarEventArgs returns StatusBar
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.OnStatusBarEventArgs.StatusBar">
+            <summary>
+            Property for StatusBar
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.OnFullScreenEventArgs">
+            <summary>
+            Event Arguments for the OnFullScreenEventArgs returns FullScreen as true or false.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.OnFullScreenEventArgs.FullScreen">
+            <summary>
+             Property for StatusBar
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.OnTheaterModeEventArgs">
+            <summary>
+            Event Arguments for the OnTheaterModeEventArgs returns TheaterMode as true or false.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.OnTheaterModeEventArgs.TheaterMode">
+            <summary>
+             Property for TheaterMode
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.PrintTemplateInstantiationEventArgs">
+            <summary>
+            Event Arguments for the PrintTemplateInstantiationEventArgs returns pDisp as object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.PrintTemplateInstantiationEventArgs.pDisp">
+            <summary>
+            property pDisp will returns _pDisp of object type. 
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.PrintTemplateTeardownEventArgs">
+            <summary>
+            Event Arguments for the PrintTemplateTeardownEventArgs returns pDisp as object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.PrintTemplateTeardownEventArgs.pDisp">
+            <summary>
+            property pDisp will returns _pDisp of object type. 
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.PrivacyImpactedStateChangeEventArgs">
+            <summary>
+            Event Arguments for the PrivacyImpactedStateChangeEventArgs returns bImpacted as true or false.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.PrivacyImpactedStateChangeEventArgs.bImpacted">
+            <summary>
+            property bImpacted will returns _bImpacted of bool type. 
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.ProgressChangeEventArgs">
+            <summary>
+            Event Arguments for the ProgressChangeEventArgs returns Progress as integer.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.ProgressChangeEventArgs.Progress">
+            <summary>
+            property Progress will returns _Progress of integer type. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.ProgressChangeEventArgs.ProgressMax">
+            <summary>
+            property ProgressMax will returns _ProgressMax of integer type. 
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.PropertyChangeEventArgs">
+            <summary>
+            Event Arguments for the PropertyChangeEventArgs returns szProperty as string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.PropertyChangeEventArgs.szProperty">
+            <summary>
+            In the _szProperty method it will get and set the value for szProperty
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.QuitEventArgs">
+            <summary>
+            Event Arguments for the QuitEventArgs returns Cancel as bool.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.QuitEventArgs.Cancel">
+            <summary>
+            In the QuitEventArgs method it will get and set the value for Cancel
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.SetPhishingFilterStatusEventArgs">
+            <summary>
+            Event Arguments for the SetPhishingFilterStatusEventArgs returns PhishingFilterStatus as integer.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.SetPhishingFilterStatusEventArgs.PhishingFilterStatus">
+            <summary>
+            Get property for PhishingFilterStatus
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.SetSecureLockIconEventArgs">
+            <summary>
+            Event Arguments for the SetSecureLockIconEventArgs returns _SecureLockIcon as integer.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.SetSecureLockIconEventArgs.SecureLockIcon">
+            <summary>
+            Get property for SecureLockIcon
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.StatusTextChangeEventArgs">
+            <summary>
+            Event Arguments for the StatusTextChangeEventArgs returns Text as string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.StatusTextChangeEventArgs.Text">
+            <summary>
+            Get property for Text
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.TitleChangeEventArgs">
+            <summary>
+            Event Arguments for the TitleChangeEventArgs returns Text as string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.TitleChangeEventArgs.Text">
+            <summary>
+            Get property for Text
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.UpdatePageStatusEventArgs">
+            <summary>
+            Event Arguments for the UpdatePageStatusEventArgs returns pDisp as object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.UpdatePageStatusEventArgs.pDisp">
+            <summary>
+            Property that evaluates to the pDisp returns of object type
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.UpdatePageStatusEventArgs.nPage">
+            <summary>
+            Property that evaluates to the nPage returns of object type
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.UpdatePageStatusEventArgs.fDone">
+            <summary>
+            Property that evaluates to the fDone returns of object type
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.WindowSetResizableEventArgs">
+            <summary>
+            Event Arguments for the WindowSetResizableEventArgs returns Resizable as bool.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WindowSetResizableEventArgs.Resizable">
+            <summary>
+            Get property for Resizable
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.WindowSetLeftEventArgs">
+            <summary>
+            Event Arguments for the WindowSetLeftEventArgs returns Left as integer.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WindowSetLeftEventArgs.Left">
+            <summary>
+            Property to get the left position value
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.WindowSetTopEventArgs">
+            <summary>
+            Event Arguments for the WindowSetTopEventArgs returns Top as integer.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WindowSetTopEventArgs.Top">
+            <summary>
+            Property to get the Top position value
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.WindowSetWidthEventArgs">
+            <summary>
+            Event Arguments for the WindowSetWidthEventArgs returns Width as integer.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WindowSetWidthEventArgs.Width">
+            <summary>
+            Property to get the Width.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.WindowSetHeightEventArgs">
+            <summary>
+            Event Arguments for the WindowSetHeightEventArgs returns Height as integer.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WindowSetHeightEventArgs.Height">
+            <summary>
+            Property to get the Height.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.WindowClosingEventArgs">
+            <summary>
+            Event Arguments for the WindowClosingEventArgs returns IsChildWindow as bool.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WindowClosingEventArgs.IsChildWindow">
+            <summary>
+            Property to get the IsChildWindow as ture or false.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WindowClosingEventArgs.Cancel">
+            <summary>
+            Property to get the Cancel as ture or false.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.WindowStateChangedEventArgs">
+            <summary>
+            Event Arguments for the WindowStateChangedEventArgs returns dwWindowStateFlags.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WindowStateChangedEventArgs.dwWindowStateFlags">
+            <summary>
+            Property to get the dwWindowStateFlags.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WindowStateChangedEventArgs.dwValidFlagsMask">
+            <summary>
+            Property to get the dwValidFlagsMask.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.BrowserExtendedNavigatingEventArgs">
+            <summary>
+            Used in the new navigation events
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserExtendedNavigatingEventArgs.pDisp">
+            <summary>
+            Pointer to the automation object of the browser
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserExtendedNavigatingEventArgs.Url">
+            <summary>
+            URL to navigate to
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserExtendedNavigatingEventArgs.Flags">
+            <summary>
+            Usually zero--consult MSDN documentation for details
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserExtendedNavigatingEventArgs.Frame">
+            <summary>
+            Name of the frame in which to display the resource, or NULL, if no named frame is targeted for the resource
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserExtendedNavigatingEventArgs.Postdata">
+            <summary>
+            Data to send to the server if the HTTP POST transaction is used
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserExtendedNavigatingEventArgs.Headers">
+            <summary>
+            Value that specifies additional HTTP headers to send to the server. These headers are added to the default MS IE
+            headers. The headers can specify things like the action required of the server, the type of data being passed to the
+            server, or a status code.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserExtendedNavigatingEventArgs.NavigationContext">
+            <summary>
+            Flags when opening a new window
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.BrowserExtendedNewWindowEventArgs">
+            <summary>
+            Used in the new window events
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserExtendedNewWindowEventArgs.pDisp">
+            <summary>
+            Pointer to the automation object of the browser
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserExtendedNewWindowEventArgs.Flags">
+            <summary>
+            Flags from the NWMF enumeration that pertain to the new window
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserExtendedNewWindowEventArgs.Url">
+            <summary>
+            URL that is opened in the new window
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserExtendedNewWindowEventArgs.UrlContext">
+            <summary>
+            URL of the page that is opening the new window
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.BrowserObjectAppearedEventArgs">
+            <summary>
+            Event Arguments for the BrowserObjectAppearedEventArgs event related to browser and ipad.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserObjectAppearedEventArgs.IE">
+            <summary>
+            Get property for IE browser
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserObjectAppearedEventArgs.pId">
+            <summary>
+            Get property for Ipad
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.BrowserObjectAppearedEventArgs.IsPopup">
+            <summary>
+            Get property for IsPopup
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.UrlContext">
+            <summary>
+            Flags used by INewWindowManager::EvaluateNewWindow.
+            These values are taken into account in the decision of whether to display a pop-up window.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.UrlContext.None">
+            <summary>
+            No information Present
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.UrlContext.Unloading">
+            <summary>
+            The page is unloading. This flag is set in response to the onbeforeunload and onunload events. 
+            Some pages load pop-up windows when you leave them rather than when you enter. This flag is used to identify those situations.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.UrlContext.UserInited">
+            <summary>
+            The call to INewWindowManager::EvaluateNewWindow is the result of a user-initiated action 
+            (a mouse click or key press). Use this flag in conjunction with the NWMF_FIRST_USERINITED flag 
+            to determine whether the call is a direct or indirect result of the user-initiated action.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.UrlContext.UserFirstInited">
+            <summary>
+            When NWMF_USERINITED is present, this flag indicates that the call to 
+            INewWindowManager::EvaluateNewWindow is the first query that results from this user-initiated action. 
+            Always use this flag in conjunction with NWMF_USERINITED.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.UrlContext.OverrideKey">
+            <summary>
+            The override key (ALT) was pressed. The override key is used to bypass the pop-up manager—allowing 
+            all pop-up windows to display—and must be held down at the time that INewWindowManager::EvaluateNewWindow is called. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.UrlContext.ShowHelp">
+            <summary>
+            The new window attempting to load is the result of a call to the showHelp method. Help is sometimes displayed in a separate window, 
+            and this flag is valuable in those cases.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.UrlContext.HtmlDialog">
+            <summary>
+            The new window is a dialog box that displays HTML content.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.UrlContext.FromProxy">
+            <summary>
+            Indicates that the EvaluateNewWindow method is being called through a marshalled Component Object Model (COM) proxy 
+            from another thread. In this situation, the method should make a decision and return immediately without performing 
+            blocking operations such as showing modal user interface (UI). Lengthy operations will cause the calling thread to 
+            appear unresponsive.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.IInternetSecurityManager">
+            <summary>
+            Interface to Intract with IE internet Security 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IInternetSecurityManager.SetSecuritySite(System.IntPtr)">
+            <summary>
+            sets the security on a site
+            </summary>
+            <param name="pSite"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IInternetSecurityManager.GetSecuritySite(System.IntPtr)">
+            <summary>
+            gets the security on a site
+            </summary>
+            <param name="pSite"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IInternetSecurityManager.MapUrlToZone(System.String,System.Int32@,System.Int32)">
+             <summary>
+            Map Url to a zone
+             </summary>
+             <param name="pwszUrl"></param>
+             <param name="pdwZone"></param>
+             <param name="dwFlags"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IInternetSecurityManager.GetSecurityId(System.String,System.Byte[],System.Int32@,System.Int32)">
+            <summary>
+            Gets the Security Zone
+            </summary>
+            <param name="pwszUrl"></param>
+            <param name="pbSecurityId"></param>
+            <param name="pcbSecurityId"></param>
+            <param name="dwReserved"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IInternetSecurityManager.ProcessUrlAction(System.String,System.Int32,System.Byte@,System.Int32,System.Byte,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Process an action on Url
+            </summary>
+            <param name="pwszUrl"></param>
+            <param name="dwAction"></param>
+            <param name="pPolicy"></param>
+            <param name="cbPolicy"></param>
+            <param name="pContext"></param>
+            <param name="cbContext"></param>
+            <param name="dwFlags"></param>
+            <param name="dwReserved"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IInternetSecurityManager.QueryCustomPolicy(System.String,System.Guid@,System.Byte@,System.Int32@,System.Byte@,System.Int32,System.Int32)">
+            <summary>
+            Queries the policy on 
+            </summary>
+            <param name="pwszUrl"></param>
+            <param name="guidKey"></param>
+            <param name="ppPolicy"></param>
+            <param name="pcbPolicy"></param>
+            <param name="pContext"></param>
+            <param name="cbContext"></param>
+            <param name="dwReserved"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IInternetSecurityManager.SetZoneMapping(System.Int32,System.String,System.Int32)">
+            <summary>
+            sets the Zone mapping on a Url
+            </summary>
+            <param name="dwZone"></param>
+            <param name="lpszPattern"></param>
+            <param name="dwFlags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IInternetSecurityManager.GetZoneMappings(System.Int32,System.Runtime.InteropServices.ComTypes.IEnumString@,System.Int32)">
+            <summary>
+            gets the Zone mappings of a url.
+            </summary>
+            <param name="dwZone"></param>
+            <param name="ppenumString"></param>
+            <param name="dwFlags"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.IServiceProvider">
+            <summary>
+            Provides access to a service identified by a globally unique identifier (GUID). 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IServiceProvider.QueryService(System.Guid@,System.Guid@,System.Object@)">
+            <summary>
+            Queries the service which is passed as the argument.
+            </summary>
+            <param name="guidService"></param>
+            <param name="riid"></param>
+            <param name="ppvObject"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.OLECMDF">
+            <summary>
+            sets enum detials of OLECMDF
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDF.OLECMDF_SUPPORTED">
+            <summary>
+            sets enum for OLECMDF SUPPORTED
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDF.OLECMDF_ENABLED">
+            <summary>
+            sets enum for OLECMDF_ENABLED
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDF.OLECMDF_LATCHED">
+            <summary>
+            sets enum for OLECMDF_LATCHED
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDF.OLECMDF_NINCHED">
+            <summary>
+            sets enum for OLECMDF_NINCHED
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDF.OLECMDF_INVISIBLE">
+            <summary>
+            sets enum for OLECMDF_INVISIBLE
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDF.OLECMDF_DEFHIDEONCTXTMENU">
+            <summary>
+            sets enum for OLECMDF_DEFHIDEONCTXTMENU
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.OLECMDID">
+            <summary>
+            sets enum detials of OLECMDID
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDID.OLECMDID_SAVEAS">
+            <summary>
+            sets enum for OLECMDID_SAVEAS
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDID.OLECMDID_PRINT">
+            <summary>
+            sets enum for OLECMDID_PRINT
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDID.OLECMDID_PRINTPREVIEW">
+            <summary>
+            sets enum for OLECMDID_PRINTPREVIEW
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDID.OLECMDID_PAGESETUP">
+            <summary>
+            sets enum for OLECMDID_PAGESETUP
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDID.OLECMDID_PROPERTIES">
+            <summary>
+             sets enum for OLECMDID_PROPERTIES
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.OLECMDEXECOPT">
+            <summary>
+            sets enum details of OLECMDEXECOPT
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDEXECOPT.OLECMDEXECOPT_DODEFAULT">
+            <summary>
+            sets enum for OLECMDEXECOPT_DODEFAULT
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDEXECOPT.OLECMDEXECOPT_PROMPTUSER">
+            <summary>
+            sets enum for OLECMDEXECOPT_PROMPTUSER
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDEXECOPT.OLECMDEXECOPT_DONTPROMPTUSER">
+            <summary>
+            sets enum for OLECMDEXECOPT_DONTPROMPTUSER
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.OLECMDEXECOPT.OLECMDEXECOPT_SHOWHELP">
+            <summary>
+            sets enum for OLECMDEXECOPT_SHOWHELP
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.tagREADYSTATE">
+            <summary>
+            sets enum details of tagREADYSTATE
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.tagREADYSTATE.READYSTATE_UNINITIALIZED">
+            <summary>
+            sets enum for READYSTATE_UNINITIALIZED
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.tagREADYSTATE.READYSTATE_LOADING">
+            <summary>
+            sets enum for READYSTATE_LOADING
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.tagREADYSTATE.READYSTATE_LOADED">
+            <summary>
+            sets enum for READYSTATE_LOADED
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.tagREADYSTATE.READYSTATE_INTERACTIVE">
+            <summary>
+            sets enum for READYSTATE_INTERACTIVE
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.tagREADYSTATE.READYSTATE_COMPLETE">
+            <summary>
+            sets enum for READYSTATE_COMPLETE
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants">
+            <summary>
+            sets enum details of BrowserNavConstants
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.OpenInNewWindow">
+            <summary>
+            sets enum for OpenInNewWindow
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.NoHistory">
+            <summary>
+            sets enum for NoHistory
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.NoReadFromCache">
+            <summary>
+            sets enum for NoReadFromCache
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.NoWriteToCache">
+            <summary>
+            sets enum for NoWriteToCache
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.AllowAutosearch">
+            <summary>
+            sets enum forAllowAutosearch
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.BrowserBar">
+            <summary>
+            sets enum for BrowserBar
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.Hyperlink">
+            <summary>
+            sets enum for Hyperlink
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.EnforceRestricted">
+            <summary>
+            sets enum for EnforceRestricted
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.NewWindowsManaged">
+            <summary>
+            sets enum for NewWindowsManaged
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.UntrustedForDownload">
+            <summary>
+            sets enum for UntrustedForDownload
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.TrustedForActiveX">
+            <summary>
+            sets enum for TrustedForActiveX
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.OpenInNewTab">
+            <summary>
+            sets enum for OpenInNewTab
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.OpenInBackgroundTab">
+            <summary>
+            sets enum for OpenInBackgroundTab
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.BrowserNavConstants.KeepWordWheelText">
+            <summary>
+            sets enum for KeepWordWheelText
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2">
+            <summary>
+            Exposes methods that are implemented by an instance of the InternetExplorer application (OLE Automation). 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.GoBack">
+            <summary>
+            Navigates backward one item in the history list.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.GoForward">
+            <summary>
+            Navigates forward one item in the history list.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.GoHome">
+            <summary>
+            Navigates to the current home or start page.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.GoSearch">
+            <summary>
+            Navigates to the current search page.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Navigate(System.String,System.Object@,System.Object@,System.Object@,System.Object@)">
+            <summary>
+            Navigates to a resource identified by a URL or to a file identified by a full path.
+            </summary>
+            <param name="URL"></param>
+            <param name="Flags"></param>
+            <param name="TargetFrameName"></param>
+            <param name="PostData"></param>
+            <param name="Headers"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Refresh">
+            <summary>
+            Reloads the file that is currently displayed in the object.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Refresh2(System.Object@)">
+            <summary>
+            Reloads the file that is currently displayed with the specified refresh level.
+            </summary>
+            <param name="Level"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Stop">
+            <summary>
+            Cancels a pending navigation or download, and stops dynamic page elements, such as background sounds and animations.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Quit">
+            <summary>
+            Closes the object. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.ClientToWindow(System.Int32@,System.Int32@)">
+            <summary>
+            Computes the full size of the browser window when given the specified width and height of the content area.
+            </summary>
+            <param name="pcx"></param>
+            <param name="pcy"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.PutProperty(System.String,System.Object)">
+            <summary>
+            Associates a user-defined name/value pair with the object.
+            </summary>
+            <param name="Property"></param>
+            <param name="vtValue"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.GetProperty(System.String)">
+            <summary>
+            Gets the value associated with a user-defined property name.
+            </summary>
+            <param name="Property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Navigate2(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)">
+            <summary>
+            Navigates the browser to a location that might not be expressed as a URL, such as a pointer to an item identifier list (PIDL) for an entity in the Windows Shell namespace.
+            </summary>
+            <param name="URL"></param>
+            <param name="Flags"></param>
+            <param name="TargetFrameName"></param>
+            <param name="PostData"></param>
+            <param name="Headers"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.QueryStatusWB(Microsoft.Uii.Csr.Browser.Web.OLECMDID)">
+            <summary>
+            Queries the object for the status of commands using the IOleCommandTarget::QueryStatus method.
+            </summary>
+            <param name="cmdID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.ExecWB(Microsoft.Uii.Csr.Browser.Web.OLECMDID,Microsoft.Uii.Csr.Browser.Web.OLECMDEXECOPT,System.Object@,System.Object@)">
+            <summary>
+            Executes a command and returns the status of the command execution using the IOleCommandTarget interface.
+            </summary>
+            <param name="cmdID"></param>
+            <param name="cmdexecopt"></param>
+            <param name="pvaIn"></param>
+            <param name="pvaOut"></param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.ShowBrowserBar(System.Object@,System.Object@,System.Object@)">
+            <summary>
+            Shows or hides a specified browser bar.
+            </summary>
+            <param name="pvaClsid"></param>
+            <param name="pvarShow"></param>
+            <param name="pvarSize"></param>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Application">
+            <summary>
+            Gets the automation object for the application that is hosting the WebBrowser Control.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Parent">
+            <summary>
+            Gets the parent of the object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Container">
+            <summary>
+            Gets an object reference to a container.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Document">
+            <summary>
+            Gets the automation object of the active document, if any.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.TopLevelContainer">
+            <summary>
+            Gets a value that indicates whether the object is a top-level container.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Type">
+            <summary>
+            Gets the user type name of the contained document object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Left">
+            <summary>
+            Sets or gets the coordinate of the left edge of the object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Top">
+            <summary>
+            Sets or gets the coordinate of the top edge of the object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Width">
+            <summary>
+            Sets or gets the width of the object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Height">
+            <summary>
+            Sets or gets the height of the object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.LocationName">
+            <summary>
+            Retrieves the path or title of the resource that is currently displayed.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.LocationURL">
+            <summary>
+            Gets the URL of the resource that is currently displayed.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Busy">
+            <summary>
+            Gets a value that indicates whether the object is engaged in a navigation or downloading operation.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Name">
+            <summary>
+            Retrieves the frame name or application name of the object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.HWND">
+            <summary>
+            Gets the handle of the Internet Explorer main window.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.FullName">
+            <summary>
+            Retrieves the fully qualified path of the Windows Internet Explorer executable.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Path">
+            <summary>
+            Retrieves the system folder of the Internet Explorer executable.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Visible">
+            <summary>
+            Sets or gets a value that indicates whether the object is visible or hidden.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.StatusBar">
+            <summary>
+            Sets or gets a value that indicates whether the status bar for the object is visible.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.StatusText">
+            <summary>
+            Sets or gets the text in the status bar for the object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.ToolBar">
+            <summary>
+            Sets or gets whether toolbars for the object are visible.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.MenuBar">
+            <summary>
+            Sets or gets a value that indicates whether the Internet Explorer menu bar is visible.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.FullScreen">
+            <summary>
+            Sets or gets a value that indicates whether Internet Explorer is in full-screen mode or normal window mode.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.ReadyState">
+            <summary>
+            Gets the ready state of the object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Offline">
+            <summary>
+            Sets or gets a value that indicates whether the object is operating in offline mode. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Silent">
+            <summary>
+            Sets or gets a value that indicates whether the object can display dialog boxes.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.RegisterAsBrowser">
+            <summary>
+            Sets or gets a value that indicates whether the object is registered as a top-level browser window.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.RegisterAsDropTarget">
+            <summary>
+            Sets or gets a value that indicates whether the object is registered as a drop target for navigation.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.TheaterMode">
+            <summary>
+            Sets or gets whether the object is in theater mode.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.AddressBar">
+            <summary>
+            Sets or gets a value that indicates whether the address bar of the object is visible or hidden.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.IWebBrowser2.Resizable">
+            <summary>
+            Sets or gets a value that indicates whether the object can be resized.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtendedState">
+            <summary>
+            Enumeration describing the various states of the Browser
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtendedState.BrowserNotAcquired">
+            <summary>
+            Control has lost or not acquired an instance of Internet Explorer.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtendedState.BrowserAcquiring">
+            <summary>
+            Control has just launched Internet Explorer and is waiting to acquire it.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtendedState.BrowserAcquired">
+            <summary>
+            Control has successfully acquired an instance of Internet Explorer.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtendedState.Disposed">
+            <summary>
+            Control has been disposed and is no longer valid.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended">
+            <summary>
+            The UII Extended Web Browser Control.
+            </summary>
+            <remarks>
+            Differs from the System.Windows.Forms.WebBrowser control in that a separate iexplore.exe process is launched, hosted, and managed by the control.
+            Advantage is multiple instances of the same web browser application will not share in-memory cookies or authentication state.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.ClearCache">
+            <summary>
+            Clears the Temporary Internet Files cache
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.CloseBrowser">
+            <summary>
+            Closes the hosted instance of Internet Explorer
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.GoBack">
+            <summary>
+            Navigates the WebBrowser control to the previous page in the navigation history, if one is available.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.GoForward">
+            <summary>
+            Navigates the WebBrowser control to the next page in the navigation history, if one is available.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.GoHome">
+            <summary>
+            Navigates the WebBrowser control to the home page of the current user.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.Navigate(System.String)">
+            <summary>
+            Loads the document at the specified Uniform Resource Locator (URL) into the WebBrowser control, replacing the previous document.
+            This overload starts the browser when necessary.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+            <param name="urlString">The URL of the document to load.</param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.Navigate(System.String,System.String,System.Byte[],System.String)">
+            <summary>
+            Loads the document at the specified Uniform Resource Locator (URL) into the WebBrowser control, requesting it using the specified HTTP data and replacing the contents of the Web page frame with the specified name.
+            This overload starts the browser when necessary.
+            When browser has not been started, that is when WebBrowserExtendedState != BrowserAcquired, all parameters except urlString are disregarded.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+            <param name="urlString">The URL of the document to load.</param>
+            <param name="targetFrameName">The name of the frame in which to load the document.</param>
+            <param name="postData">HTTP POST data such as form data.</param>
+            <param name="additionalHeaders">HTTP headers to add to the default headers.</param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.Refresh">
+            <summary>
+            Reloads the document currently displayed in the WebBrowser control by checking the server for an updated version.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.Refresh(System.Windows.Forms.WebBrowserRefreshOption)">
+            <summary>
+            Reloads the document currently displayed in the WebBrowser control using the specified refresh options.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+            <param name="opt">One of the WebBrowserRefreshOption values.</param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.Stop">
+            <summary>
+            Cancels any pending navigation and stops any dynamic page elements, such as background sounds and animations.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.#ctor">
+            <summary>
+            Creates an instance of the WebBrowserExtended control using the background Internet Explorer process 
+            using dynamic window positioning technique
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.#ctor(System.Boolean)">
+            <summary>
+            Creates an instance of the WebBrowserExtended control
+            </summary>
+            <param name="useNewProcess">When true, launches a new process to host Internet Explorer.</param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.#ctor(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Creates an instance of the WebBrowserExtended control
+            </summary>
+            <param name="useNewProcess">When true, launches a new process to host Internet Explorer.</param>
+            <param name="hostInside">Uses setparent technique to posistion the IE browser Window</param>
+            <param name="hostOnTop">When true, uses Dynamic positioning to host the IE browser window</param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.Activate">
+            <summary>
+            For internal Use
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.FindTabItemToListen">
+            <summary>
+            Find the Wpf tabitem to listen
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.AttachListenersForWindowPositioning(System.Windows.Forms.TabPage)">
+            <summary>
+            Attaches to events on the specified tabPage and parent tabControl to support window positioning.
+            Multiple invocations with the same tabPage will have the same effect as a single invocation.
+            If window positioning is not configured, this method will have no effect.
+            </summary>
+            <param name="tabPage">The Tab Page</param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.AttachListenersForWindowPositioning(System.Windows.Controls.TabItem)">
+            <summary>
+            Attaches to events on the specified tabItem and parent tabControl to support window positioning.
+            Multiple invocations with the same tabItem will have the same effect as a single invocation.
+            If window positioning is not configured, this method will have no effect.
+            </summary>
+            <param name="tabItem">The TabItem</param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.DetachAllListenersForWindowPositioning">
+            <summary>
+            Detaches any previously attached events that support window positioning.
+            If window positioning is not configured, this method will have no effect.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.DetachAllListenersForWpfWindowPositioning">
+            <summary>
+            Detaches any previously attached events that support window positioning.
+            If window positioning is not configured, this method will have no effect.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.ShowAndActivatePositionedWindow">
+            <summary>
+            Shows and Activates (sizes and positions) the positioned window.
+            If window positioning is not configured, this method will have no effect.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.ShowAndActivateDeckPositionedWindow">
+            <summary>
+            Shows and Activates (sizes and positions) the positioned window.
+            If window positioning is not configured, this method will have no effect.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.HidePositionedWindow">
+            <summary>
+            Hides the positioned window.
+            If window positioning is not configured, this method will have no effect.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.DetachIE">
+            <summary>
+            Internal Use only.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.AttachIE">
+            <summary>
+            Internal Use only.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.OnPaint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Called when [paint].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Windows.Forms.PaintEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.OnVisibleChanged(System.Object,System.EventArgs)">
+            <summary>
+            Called when [visible changed].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.Reposition">
+            <summary>
+            For Internal Use only.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.EvaluateSecurityZone(System.String)">
+            <summary>
+            Evaluates the security Zone of the Url
+            </summary>
+            <param name="Uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.CreateEventSync">
+            <summary>
+            For Internal Use Only.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.isAppClosing">
+            <summary>
+            flag to close applications
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.HostOnTop">
+            <summary>
+            HostOnTop property of the control
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.WebBrowser">
+            <summary>
+            IWebBrowser2 object instance contained within this control.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.IEFrameHandle">
+            <summary>
+            Handle of started browser window.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.WebBrowserExtendedState">
+            <summary>
+            Gets the current state of the WebBrowserExtended control.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.MainWindow">
+            <summary>
+            Top-level window handle of the WebBrowser.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.Document">
+            <summary>
+            Gets an mshtml.HTMLDocument (an RCW) representing the Web page currently displayed in the WebBrowserExtended control.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.IsBusy">
+            <summary>
+            Gets a value indicating whether the WebBrowser control is currently loading a new document.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.IsOffline">
+            <summary>
+            Gets a value indicating whether the WebBrowser control is in offline mode.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.ReadyState">
+            <summary>
+            Gets a value indicating the current state of the WebBrowser control.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.StatusText">
+            <summary>
+            Gets the status text of the WebBrowser control.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.Url">
+            <summary>
+            Gets or sets the URL of the current document.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">This control is no longer valid.</exception>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.Version">
+            <summary>
+            Gets the version of Internet Explorer installed.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.BeforeNavigate_">
+            <summary>
+            Fires before navigation occurs in the given object (on either a window or frameset element). (deprecated)
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.FrameBeforeNavigate">
+            <summary>
+            Fires before navigation occurs in the given object (on either a window or frameset element). (deprecated)
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.NewWindow">
+            <summary>
+            Fires when a new window is to be created. (deprecated)
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.FrameNewWindow">
+            <summary>
+            Fires when a new window is to be created. (deprecated)
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.NavigateComplete">
+            <summary>
+            Fires after a navigation to a link is completed on either a window element or a frameSet element. (deprecated)
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.FrameNavigateComplete">
+            <summary>
+            Fires after a navigation to a link is completed on either a window element or a frameSet element. (deprecated)
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.OnQuit">
+            <summary>
+            Fires before the Internet Explorer application quits. (deprecated)
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.BeforeNavigate2">
+            <summary>
+            Fires before navigation occurs in the given object (on either a window element or a frameset element).
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.ClientToHostWindow">
+            <summary>
+            Fires to request that the client window size is converted to the host window size.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.CommandStateChange">
+            <summary>
+            Fires when the enabled state of a command changes.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.DocumentComplete">
+            <summary>
+            Fires when a document is completely loaded and initialized.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.DownloadBegin">
+            <summary>
+            Fires when a navigation operation begins.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.DownloadComplete">
+            <summary>
+            Fires when a navigation operation finishes, is halted, or fails.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.FileDownload">
+            <summary>
+            Fires to indicate that a file download is about to occur. If a file download dialog box can be displayed, this event fires prior to the appearance of the dialog box.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.NavigateComplete2">
+            <summary>
+            Fires after a navigation to a link is completed on a window element or a frameSet element.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.NavigateError">
+            <summary>
+            Fires when an error occurs during navigation.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.NewWindow2">
+            <summary>
+            Fires when a new window is to be created.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.NewWindow3">
+            <summary>
+            Raised when a new window is to be created. Extends NewWindow2 with additional information about the new window. Available in WinXP SP2 and later.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.OnVisible">
+            <summary>
+            Fires when the IWebBrowser2::Visible property of the object is changed.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.OnToolBar">
+            <summary>
+            Fires when the IWebBrowser2::ToolBar property is changed.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.OnMenuBar">
+            <summary>
+            Fires when the IWebBrowser2::MenuBar property is changed.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.OnStatusBar">
+            <summary>
+            Fires when the IWebBrowser2::StatusBar property is changed.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.OnFullScreen">
+            <summary>
+            Fires when the IWebBrowser2::FullScreen property is changed.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.OnTheaterMode">
+            <summary>
+            Fires when the IWebBrowser2::TheaterMode property is changed.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.PrintTemplateInstantiation">
+            <summary>
+            Fires when a print template is instantiated.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.PrintTemplateTeardown">
+            <summary>
+            Fires when a print template is instantiated.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.PrivacyImpactedStateChange">
+            <summary>
+            Fired when an event occurs that impacts privacy, or when a user navigates away from a URL that has impacted privacy.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.ProgressChange">
+            <summary>
+            Fires when the progress of a download operation is updated on the object.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.PropertyChange">
+            <summary>
+            Fires when the IWebBrowser2::PutProperty method of the object changes the value of a property.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.Quit">
+            <summary>
+            Fires before the Internet Explorer application quits.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.SetPhishingFilterStatus">
+            <summary>
+            Fires to indicate the progress and status of Microsoft Phishing Filter analysis of the current webpage.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.SetSecureLockIcon">
+            <summary>
+            Fires when there is a change in encryption level.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.StatusTextChange">
+            <summary>
+            Fires when the status bar text of the object has changed.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.TitleChange">
+            <summary>
+            Fires when the status bar text of the object has changed.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.UpdatePageStatus">
+            <summary>
+            Not implemented.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.WindowSetResizable">
+            <summary>
+            Fires to indicate whether the host window should allow resizing of the object.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.WindowSetLeft">
+            <summary>
+            Fires when the object changes its left position.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.WindowSetTop">
+            <summary>
+            Fires when the object changes its top position.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.WindowSetWidth">
+            <summary>
+            Fires when the object changes its width
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.WindowSetHeight">
+            <summary>
+            Fires when the object changes its height.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.WindowClosing">
+            <summary>
+            Fires when the window of the object is about to be closed by script.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.WindowStateChanged">
+            <summary>
+            Fires when the visibility state of a content window, such as the browser window or a tab, changes.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.BeforeNavigate">
+            <summary>
+            Fires when DWebBrowserEvents2 BeforeNavigate2 event fires.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.BeforeNewWindow">
+            <summary>
+            Fires when DWebBrowserEvents2 NewWindow2 and NewWindow3 events fire.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.DownloadStarted">
+            <summary>
+            Same as DownloadBegin, included for backward compatibility.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.DownloadCompleted">
+            <summary>
+            Same as DownloadComplete, included for backward compatibility.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.Navigated">
+            <summary>
+            Same as NavigateComplete2, included for backward compatibility
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.DocumentCompleted">
+            <summary>
+            Same as DocumentComplete, included for backward compatibility
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.BrowserProcessExited">
+            <summary>
+            Fires when the hosted browser process exits when the WebBrowserExtended control is still valid (not disposed).
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.BrowserObjectAppeared">
+            <summary>
+            Fires when the browser process object (IWebBrowser2) appears, providing an opportunity to manipulate its properties.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtended.PageLoadComplete">
+            <summary>
+            Fires when the browser object has finished downloading the entire page.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtendedResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtendedResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtendedResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtendedResources.WBE0100UriNotAbsolute">
+            <summary>
+              Looks up a localized string similar to WBE0100: Uri is not absolute..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Uii.Csr.Browser.Web.WebBrowserExtendedResources.WBE0101ProtectedModeNotSupported">
+            <summary>
+              Looks up a localized string similar to WBE0101: Protected mode not supported..
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProdgressDataItemEventArgs">
+            <summary>
+            Event args class for Progress data Item.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProdgressDataItemEventArgs.progressItem">
+            <summary>
+            Gets or Sets Item Progress.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProgressDataItem">
+            <summary>
+            Class for progress panel data items.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.MyNotifyProps">
+            <summary>
+            WPF Helper class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.MyNotifyProps.SetProperty``1(``0@,``0,System.String)">
+            <summary>
+            Set property template for My Notify props.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="field">ref</param>
+            <param name="value">value</param>
+            <param name="name">string</param>
+        </member>
+        <member name="E:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.MyNotifyProps.PropertyChanged">
+            <summary>
+            Default Event Hook for INotifyPropertyChanged.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProgressDataItem.ItemText">
+            <summary>
+            Gets or Sets Item Text.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProgressDataItem.ItemStatus">
+            <summary>
+            Gets or Sets progress panel item status.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProgressPanelItemStatus">
+            <summary>
+            Progress panel item status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProgressPanelItemStatus.Working">
+            <summary>
+            Describes working status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProgressPanelItemStatus.Complete">
+            <summary>
+            Describes complete status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProgressPanelItemStatus.Failed">
+            <summary>
+            Describes failed status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProgressPanelItemStatus.Warning">
+            <summary>
+            Describes warning status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProgressPanelItemStatus.Unknown">
+            <summary>
+            Describes unknown status.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportProgressStatus">
+            <summary>
+            Class for import progress status.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportProgressStatus.isCompleted">
+            <summary>
+            Gets or Sets status completed or not.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportProgressStatus.StatusMessage">
+            <summary>
+            Gets or Sets message status.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger">
+            <summary>
+            Class for Trace logger.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger.source">
+            <summary>
+            Trace Tag. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger._LastError">
+            <summary>
+            String Builder Info.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger._LastException">
+            <summary>
+            Last Exception.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="traceSourceName">trace source name</param>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger.ResetLastError">
+            <summary>
+            Last error reset.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger.Log(System.String)">
+            <summary>
+            Log a Message. 
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger.Log(System.String,System.Diagnostics.TraceEventType)">
+            <summary>
+            Log a Trace event. 
+            </summary>
+            <param name="message"></param>
+            <param name="eventType"></param>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger.Log(System.String,System.Diagnostics.TraceEventType,System.Exception)">
+            <summary>
+            Log a Trace event.
+            </summary>
+            <param name="message">Error Message</param>
+            <param name="eventType">Trace Event type Information</param>
+            <param name="exception">Exception object</param>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger.Log(System.Exception)">
+            <summary>
+            Log an error with an Exception.
+            </summary>
+            <param name="exception"></param>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger.LogExceptionToFile(System.Exception,System.Text.StringBuilder,System.Int32)">
+            <summary>
+            Logs the error text to the stream.
+            </summary>
+            <param name="objException">Exception to be written.</param>
+            <param name="sw">Stream writer to use to write the exception.</param>
+            <param name="level">level of the exception, this deals with inner exceptions.</param>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger.LastError">
+            <summary>
+            Last Error from CRM.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger.LastException">
+            <summary>
+            Last Exception from CRM .
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.TraceLogger.CurrentTraceLevel">
+            <summary>
+            Returns the trace source level for the current logger. 
+            </summary>
+        </member>
+        <member name="T:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions">
+            <summary>
+            Describes the interface that an Import plugin must implement. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.PreImport">
+            <summary>
+            Called during the preImport Process. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.PerApplicationRecordImport(Microsoft.Uii.Common.Entities.ApplicationRecord)">
+            <summary>
+            Called for each application that is about to be imported. 
+            </summary>
+            <param name="app"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.PostImport">
+            <summary>
+            Called as part of the post Import process. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.InitializeExtension">
+            <summary>
+            Initialize extension functionality.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.GetImportName(System.Boolean)">
+            <summary>
+            Gets the import name.
+            </summary>
+            <param name="plural">Returns the plural version of the name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.RunSolutionUpgradeMigrationStep(System.String,System.String,System.String,System.Guid,System.Guid)">
+            <summary>
+            Is called during a solution upgrade when both solutions, old and Holding, are present in the system. 
+            </summary>
+            <param name="solutionName">Name of the solution.</param>
+            <param name="oldVersion">Old version number.</param>
+            <param name="newVersion">New version number.</param>
+            <param name="oldSolutionId">Old solution id.</param>
+            <param name="newSolutionId">New solution id.</param>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.RootControlDispatcher">
+            <summary>
+            Parent dispatcher for displaying UI elements. 
+            </summary>
+        </member>
+        <member name="E:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.AddNewProgressItem">
+            <summary>
+            Describes an event for new progress item.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.UpdateProgressItem">
+            <summary>
+            Describes an event for update progress item.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.CrmSvc">
+            <summary>
+            Pointer to the CRM service connection. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.GetImportLongName">
+            <summary>
+             Returns the long name of the import. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.GetImportPackageFolderName">
+            <summary>
+            Returns the folder name where the import package lives.  
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.GetImportPackageDescription">
+            <summary>
+            Retuns the description of the import package. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions.GetExtraProgramLaunchLinkText">
+            <summary>
+            Returns the launch link text shown on the last page of the package deployer. 
+            </summary>
+        </member>
+        <member name="T:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension">
+            <summary>
+            Extension for package setup import activities.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.CurrentProgress">
+            <summary>
+            Current progress step we are working on. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.PackageLog">
+            <summary>
+            Logging Interface. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RaiseFailEvent(System.String,System.Exception)">
+            <summary>
+            Raised a failed event to the caller. 
+            </summary>
+            <param name="message"></param>
+            <param name="Ex"></param>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RaiseUpdateEvent(System.String,Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProgressPanelItemStatus)">
+            <summary>
+            Raise a Status updated event. 
+            </summary>
+            <param name="message"></param>
+            <param name="status"></param>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.CreateProgressItem(System.String)">
+            <summary>
+            Create and add new progress item. 
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.PreImport">
+            <summary>
+            Internal Use..> Do not call. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.PerApplicationRecordImport(Microsoft.Uii.Common.Entities.ApplicationRecord)">
+            <summary>
+            Internal Use..> Do not call. 
+            </summary>
+            <param name="app"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.PostImport">
+            <summary>
+            Internal Use..> Do not call. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.InitializeExtension">
+            <summary>
+            Initialize extension functionality.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.GetImportName(System.Boolean)">
+            <summary>
+            Returns the Name of the import project. 
+            </summary>
+            <param name="plural"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RunSolutionUpgradeMigrationStep(System.String,System.String,System.String,System.Guid,System.Guid)">
+            <summary>
+            Is called during a solution upgrade when both solutions, old and Holding, are present in the system. 
+            </summary>
+            <param name="solutionName">Name of the solution.</param>
+            <param name="oldVersion">Old version number.</param>
+            <param name="newVersion">New version number.</param>
+            <param name="oldSolutionId">Old solution id.</param>
+            <param name="newSolutionId">New solution id.</param>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.BeforeImportStage">
+            <summary>
+            Called before the Main Import process begins, after solutions and data. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.BeforeApplicationRecordImport(Microsoft.Uii.Common.Entities.ApplicationRecord)">
+            <summary>
+            Called Before each application record is imported. 
+            </summary>
+            <param name="app"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.AfterPrimaryImport">
+            <summary>
+            Called After all Import steps are complete, allowing for final customizations or tweaking of the CRM instance. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.InitializeCustomExtension">
+            <summary>
+            Called to Initialize any functions in the Custom Extension. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.GetNameOfImport(System.Boolean)">
+            <summary>
+            Returns the Name of the Import project. 
+            </summary>
+            <param name="plural">if true,  return the plural name of the import project</param>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.GetProcessId(System.String,System.Boolean)">
+            <summary>
+            Gets the Id for a Dialog by Name. 
+            </summary>
+            <param name="name">Dialog name</param>
+            <param name="isDialog">Verify is it dailog or not.</param>
+            <returns>Process id.</returns>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.IsRoleAssoicatedWithTeam(System.Guid,System.Guid)">
+            <summary>
+            Checks to see if the Team is already associated to the requested security role.
+            </summary>
+            <param name="guTeamId"></param>
+            <param name="guRoleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.IsWorkflowActive(System.Guid)">
+            <summary>
+            Is a Workflow Active. 
+            </summary>
+            <param name="wfId"></param>
+            <returns></returns>
+        </member>
+        <member name="E:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.AddNewProgressItem">
+            <summary>
+            Describes an event for new progress item.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.UpdateProgressItem">
+            <summary>
+            Describes an event for update progress item.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.CrmSvc">
+            <summary>
+            Returns a pointer to the CRM instance. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RootControlDispatcher">
+            <summary>
+            Parent dispatcher for displaying UI elements. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.GetImportLongName">
+            <summary>
+            Returns the long name of the import process. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.GetImportPackageFolderName">
+            <summary>
+            Returns the folder name of the import. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.GetImportPackageDescription">
+            <summary>
+            Gets package description import.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.GetExtraProgramLaunchLinkText">
+            <summary>
+            Returns the Title Link Text that is show on the completed page. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.GetLongNameOfImport">
+            <summary>
+            Returns the long name of the import process. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.GetImportPackageDataFolderName">
+            <summary>
+            Returns the name of the Import package data folder. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.GetImportPackageDescriptionText">
+            <summary>
+            Description of the import package.  
+            </summary>
+        </member>
+    </members>
+</doc>
