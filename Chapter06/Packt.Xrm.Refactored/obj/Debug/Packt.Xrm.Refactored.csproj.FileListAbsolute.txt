@@ -1,0 +1,12 @@
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Refactored\obj\Debug\Packt.Xrm.Refactored.csprojResolveAssemblyReference.cache
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Refactored\bin\Debug\Packt.Xrm.Refactored.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Refactored\bin\Debug\Packt.Xrm.Refactored.pdb
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Refactored\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Refactored\bin\Debug\Microsoft.IdentityModel.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Refactored\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Refactored\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Refactored\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Refactored\obj\Debug\Packt.Xrm.Refactored.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Refactored\obj\Debug\Packt.Xrm.Refactored.pdb
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Refactored\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+C:\Projects\OptimisticConcurrencyControl\Packt.Xrm.Refactored\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml

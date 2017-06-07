@@ -1,0 +1,85 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.Xrm.Sdk;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+using System.Runtime.Serialization;
+
+namespace Packt.Xrm.Refactored.DataAccessLayer
+{
+    public class AzureCrmTracing : ICustomTracingService
+    {
+        IServiceEndpointNotificationService _cloudService;
+        Guid _serviceEndpointId;
+        IPluginExecutionContext _context;
+
+        public AzureCrmTracing(IServiceEndpointNotificationService cloudService, Guid serviceEndpointId, IPluginExecutionContext context)
+        {
+            _cloudService = cloudService;
+            _serviceEndpointId = serviceEndpointId;
+            _context = context;
+
+        }
+
+        public void Trace(string message, params object[] args)
+        {
+
+            var entity = new Entity("packt_log");
+            entity.Attributes["packt_logdetails"] = string.Format(message, args);
+            OrganizationService.Create(entity);
+
+
+            var executionContextDto = new RemoteExecutionContext()
+            {
+                PrimaryEntityName = "account",
+                PrimaryEntityId = new Guid("F9BAA7DB-95E0-E611-8101-C4346BAD3418"),
+                MessageName = "Testing 123"
+            };
+
+            //Microsoft.Crm.Sandbox.SandboxOrganizationServiceFactoryWrapper.Execute(EntityReference serviceEndpoint, IExecutionContext context)
+
+            try
+            {
+                _cloudService.Execute(new EntityReference("serviceendpoint", _serviceEndpointId), executionContextDto);
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidPluginExecutionException("Error at here execute " + ex.Message + "...");
+                //+ "::" + ">>" + ex.StackTrace + "INNNNER" 
+            }
+        }
+
+        //private IExecutionContext mapContext(IPluginExecutionContext context)
+        //{
+        //    var remote = _mapper.Map<IPluginExecutionContext, MyContext>(context);
+        //    return remote;
+        //}
+
+        //public static T Clone<T>(T source)
+        //{
+        //    if (!typeof(T).IsSerializable)
+        //    {
+        //        throw new ArgumentException("The type must be serializable.", "source");
+        //    }
+
+        //    // Don't serialize a null object, simply return the default for that object
+        //    if (Object.ReferenceEquals(source, null))
+        //    {
+        //        return default(T);
+        //    }
+
+        //    IFormatter formatter = new BinaryFormatter();
+        //    Stream stream = new MemoryStream();
+        //    using (stream)
+        //    {
+        //        formatter.Serialize(stream, source);
+        //        stream.Seek(0, SeekOrigin.Begin);
+        //        return (T)formatter.Deserialize(stream);
+        //    }
+        //}
+
+    }
+}
